@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_vFnwcLIxEeShALfFx3c95w">
+  <modelElement href="ostorybook.uml#_QMECULIxEeShALfFx3c95w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_AnfPQbIzEeShALfFx3c95w" targetItem="_AngdYLIzEeShALfFx3c95w" sourceItem="_AnfPQLIzEeShALfFx3c95w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Ani5obIzEeShALfFx3c95w" targetItem="_AnlV4LIzEeShALfFx3c95w" sourceItem="_Ani5oLIzEeShALfFx3c95w"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_AnfPQLIzEeShALfFx3c95w" sourceConnectionVisual="_AnfPQbIzEeShALfFx3c95w" text="@author martin&#xA; *" item="_AngdYLIzEeShALfFx3c95w">
+    <modelElement href="ostorybook.uml#_iJYjhLIxEeShALfFx3c95w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Ani5oLIzEeShALfFx3c95w" sourceConnectionVisual="_Ani5obIzEeShALfFx3c95w" text="@author martin&#xA; *" item="_AnlV4LIzEeShALfFx3c95w">
+    <modelElement href="ostorybook.uml#_iJYjg7IxEeShALfFx3c95w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_AngdYLIzEeShALfFx3c95w" comments="_AnfPQLIzEeShALfFx3c95w" targetConnectionVisual="_AnfPQbIzEeShALfFx3c95w" name="IRefreshable">
+    <modelElement href="ostorybook.uml#_QfjmEbIxEeShALfFx3c95w"/>
+    <visualProperties xmi:id="_AngdYbIzEeShALfFx3c95w" position="50.0,50.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_AngdYrIzEeShALfFx3c95w" label="+"/>
+    <operations xmi:id="_AngdY7IzEeShALfFx3c95w" name="refresh">
+      <modelElement href="ostorybook.uml#_hkH6ULIxEeShALfFx3c95w"/>
+      <visibility xmi:id="_AngdZLIzEeShALfFx3c95w" label="+"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_AnlV4LIzEeShALfFx3c95w" comments="_Ani5oLIzEeShALfFx3c95w" targetConnectionVisual="_Ani5obIzEeShALfFx3c95w" name="IPaintable">
+    <modelElement href="ostorybook.uml#_bOvFkLIxEeShALfFx3c95w"/>
+    <visualProperties xmi:id="_AnlV4bIzEeShALfFx3c95w" position="216.0,31.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Anl88LIzEeShALfFx3c95w" label="+"/>
+    <operations xmi:id="_Anl88bIzEeShALfFx3c95w" name="init">
+      <modelElement href="ostorybook.uml#_hkGsMLIxEeShALfFx3c95w"/>
+      <visibility xmi:id="_Anl88rIzEeShALfFx3c95w" label="+"/>
+    </operations>
+    <operations xmi:id="_Anl887IzEeShALfFx3c95w" name="initUi">
+      <modelElement href="ostorybook.uml#_hkGsMbIxEeShALfFx3c95w"/>
+      <visibility xmi:id="_Anl89LIzEeShALfFx3c95w" label="+"/>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

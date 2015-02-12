@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_vGXXULIxEeShALfFx3c95w">
+  <modelElement href="ostorybook.uml#_hkJvgLIxEeShALfFx3c95w"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_LjvhcLIzEeShALfFx3c95w" target="_LjwIgLIzEeShALfFx3c95w">
+    <modelElement href="ostorybook.uml#_iJZKkbIxEeShALfFx3c95w"/>
+    <visualProperties xmi:id="_Lj6gkLIzEeShALfFx3c95w" position="90.0,90.0"/>
+    <nameVisual xmi:id="_LjvhcbIzEeShALfFx3c95w" text=""/>
+    <sourceRole xmi:id="_LjvhcrIzEeShALfFx3c95w" aggregationKind="NONE" name="state" navigable="true">
+      <modelElement href="ostorybook.uml#_iHS40LIxEeShALfFx3c95w"/>
+      <visibility xmi:id="_Ljvhc7IzEeShALfFx3c95w" label="+"/>
+      <cardinality xmi:id="_LjvhdLIzEeShALfFx3c95w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_LjvhdbIzEeShALfFx3c95w" aggregationKind="NONE" name="">
+      <modelElement href="ostorybook.uml#_iJZKkrIxEeShALfFx3c95w"/>
+      <visibility xmi:id="_LjvhdrIzEeShALfFx3c95w" label="+"/>
+      <cardinality xmi:id="_Ljvhd7IzEeShALfFx3c95w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_LjwIgLIzEeShALfFx3c95w" name="SceneStateLabel" associationsIn="_LjvhcLIzEeShALfFx3c95w">
+    <modelElement href="ostorybook.uml#_hsOtcLIxEeShALfFx3c95w"/>
+    <visualProperties xmi:id="_LjwIgbIzEeShALfFx3c95w" position="50.0,50.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_LjwIgrIzEeShALfFx3c95w" name="LegacyStyledElement">
+      <modelElement href="ostorybook.uml#_hsPUgLIxEeShALfFx3c95w"/>
+    </stereotypes>
+    <stereotypes xmi:id="_LjwIg7IzEeShALfFx3c95w" name="Annotations">
+      <modelElement href="ostorybook.uml#_hsS-4LIxEeShALfFx3c95w"/>
+    </stereotypes>
+    <visibility xmi:id="_LjwIhLIzEeShALfFx3c95w" label="+"/>
+    <attributes xmi:id="_LjwIhbIzEeShALfFx3c95w" name="state">
+      <modelElement href="ostorybook.uml#_iHS40LIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_LjwIhrIzEeShALfFx3c95w" name="StyledElement">
+        <modelElement href="ostorybook.uml#_iHS40bIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_LjwIh7IzEeShALfFx3c95w" name="StyledElement">
+        <modelElement href="ostorybook.uml#_iHS40bIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_LjwIiLIzEeShALfFx3c95w" label="+"/>
+      <cardinality xmi:id="_LjwIibIzEeShALfFx3c95w" label="1" max="1" min="1"/>
+      <type xmi:id="_LjwIirIzEeShALfFx3c95w" name="SceneState">
+        <modelElement href="ostorybook.uml#_A0jFwLIxEeShALfFx3c95w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_LjwIi7IzEeShALfFx3c95w" name="iconOnly">
+      <modelElement href="ostorybook.uml#_iHTf4LIxEeShALfFx3c95w"/>
+      <visibility xmi:id="_LjwIjLIzEeShALfFx3c95w" label="-"/>
+      <cardinality xmi:id="_LjwIjbIzEeShALfFx3c95w" label="1" max="1" min="1"/>
+      <type xmi:id="_LjwIjrIzEeShALfFx3c95w" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_LjwIj7IzEeShALfFx3c95w" name="SceneStateLabel">
+      <modelElement href="ostorybook.uml#_hsP7kLIxEeShALfFx3c95w"/>
+      <keywords xmi:id="_LjwIkLIzEeShALfFx3c95w" keyword="create"/>
+      <stereotypes xmi:id="_LjwIkbIzEeShALfFx3c95w" name="StyledElement">
+        <modelElement href="ostorybook.uml#_hsQio7IxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_LjwIkrIzEeShALfFx3c95w" label="+"/>
+      <outParameters xmi:id="_LjwIk7IzEeShALfFx3c95w">
+        <modelElement href="ostorybook.uml#_hsQiorIxEeShALfFx3c95w"/>
+        <type xmi:id="_LjwIlLIzEeShALfFx3c95w" name="SceneStateLabel">
+          <modelElement href="ostorybook.uml#_hsOtcLIxEeShALfFx3c95w"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_LjwIlbIzEeShALfFx3c95w" name="state">
+        <modelElement href="ostorybook.uml#_hsP7kbIxEeShALfFx3c95w"/>
+        <type xmi:id="_LjwIlrIzEeShALfFx3c95w" name="SceneState">
+          <modelElement href="ostorybook.uml#_A0jFwLIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LjwIl7IzEeShALfFx3c95w" name="SceneStateLabel">
+      <modelElement href="ostorybook.uml#_hsRJsLIxEeShALfFx3c95w"/>
+      <keywords xmi:id="_LjwImLIzEeShALfFx3c95w" keyword="create"/>
+      <stereotypes xmi:id="_LjwImbIzEeShALfFx3c95w" name="StyledElement">
+        <modelElement href="ostorybook.uml#_hsRwwLIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_LjwImrIzEeShALfFx3c95w" label="+"/>
+      <outParameters xmi:id="_LjwIm7IzEeShALfFx3c95w">
+        <modelElement href="ostorybook.uml#_hsRJtbIxEeShALfFx3c95w"/>
+        <type xmi:id="_LjwInLIzEeShALfFx3c95w" name="SceneStateLabel">
+          <modelElement href="ostorybook.uml#_hsOtcLIxEeShALfFx3c95w"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_LjwInbIzEeShALfFx3c95w" name="state">
+        <modelElement href="ostorybook.uml#_hsRJsbIxEeShALfFx3c95w"/>
+        <type xmi:id="_LjwInrIzEeShALfFx3c95w" name="SceneState">
+          <modelElement href="ostorybook.uml#_A0jFwLIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_LjwIn7IzEeShALfFx3c95w" name="iconOnly">
+        <modelElement href="ostorybook.uml#_hsRJsrIxEeShALfFx3c95w"/>
+        <type xmi:id="_LjwIoLIzEeShALfFx3c95w" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LjwIobIzEeShALfFx3c95w" name="refresh">
+      <modelElement href="ostorybook.uml#_hsRwwbIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_LjwIorIzEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_hsSX0LIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_LjwIo7IzEeShALfFx3c95w" label="+"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Lj4EULIzEeShALfFx3c95w" name="StrandLabel">
+    <modelElement href="ostorybook.uml#_hsTl8LIxEeShALfFx3c95w"/>
+    <visualProperties xmi:id="_Lj4EUbIzEeShALfFx3c95w" position="582.0,133.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_Lj4EUrIzEeShALfFx3c95w" name="LegacyStyledElement">
+      <modelElement href="ostorybook.uml#_hsUNALIxEeShALfFx3c95w"/>
+    </stereotypes>
+    <stereotypes xmi:id="_Lj4EU7IzEeShALfFx3c95w" name="Annotations">
+      <modelElement href="ostorybook.uml#_hsVbILIxEeShALfFx3c95w"/>
+    </stereotypes>
+    <visibility xmi:id="_Lj4EVLIzEeShALfFx3c95w" label="+"/>
+    <operations xmi:id="_Lj4EVbIzEeShALfFx3c95w" name="StrandLabel">
+      <modelElement href="ostorybook.uml#_hsUNAbIxEeShALfFx3c95w"/>
+      <keywords xmi:id="_Lj4EVrIzEeShALfFx3c95w" keyword="create"/>
+      <stereotypes xmi:id="_Lj4EV7IzEeShALfFx3c95w" name="StyledElement">
+        <modelElement href="ostorybook.uml#_hsU0E7IxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_Lj4EWLIzEeShALfFx3c95w" label="+"/>
+      <outParameters xmi:id="_Lj4EWbIzEeShALfFx3c95w">
+        <modelElement href="ostorybook.uml#_hsU0ErIxEeShALfFx3c95w"/>
+        <type xmi:id="_Lj4EWrIzEeShALfFx3c95w" name="StrandLabel">
+          <modelElement href="ostorybook.uml#_hsTl8LIxEeShALfFx3c95w"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Lj4EW7IzEeShALfFx3c95w" name="strand">
+        <modelElement href="ostorybook.uml#_hsUNArIxEeShALfFx3c95w"/>
+        <type xmi:id="_Lj4EXLIzEeShALfFx3c95w" name="Strand">
+          <modelElement href="ostorybook.uml#_Awj9oLIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

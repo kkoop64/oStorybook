@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_vFM5sLIxEeShALfFx3c95w">
+  <modelElement href="ostorybook.uml#_nZ8eMLIxEeShALfFx3c95w"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_6JyzELIyEeShALfFx3c95w" name="ColorHighlighter">
+    <modelElement href="ostorybook.uml#_nkUiMLIxEeShALfFx3c95w"/>
+    <visualProperties xmi:id="_6JyzEbIyEeShALfFx3c95w" position="50.0,50.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_6JyzErIyEeShALfFx3c95w" name="LegacyStyledElement">
+      <modelElement href="ostorybook.uml#_nkVJQLIxEeShALfFx3c95w"/>
+    </stereotypes>
+    <stereotypes xmi:id="_6JyzE7IyEeShALfFx3c95w" name="Annotations">
+      <modelElement href="ostorybook.uml#_nkYMkLIxEeShALfFx3c95w"/>
+    </stereotypes>
+    <visibility xmi:id="_6JyzFLIyEeShALfFx3c95w" label="+"/>
+    <operations xmi:id="_6JyzFbIyEeShALfFx3c95w" name="addChangeListener">
+      <modelElement href="ostorybook.uml#_nkVJQbIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6JyzFrIyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_nkVwULIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6JyzF7IyEeShALfFx3c95w" label="+"/>
+      <parameters xmi:id="_6JyzGLIyEeShALfFx3c95w" name="arg0">
+        <modelElement href="ostorybook.uml#_nkVJQrIxEeShALfFx3c95w"/>
+        <type xmi:id="_6JyzGbIyEeShALfFx3c95w" name="ChangeListener">
+          <modelElement href="ostorybook.uml#_Qgbv0bIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6JyzGrIyEeShALfFx3c95w" name="getChangeListeners">
+      <modelElement href="ostorybook.uml#_nkVwUrIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6JyzG7IyEeShALfFx3c95w" name="Array">
+        <modelElement href="ostorybook.uml#_nkWXYrIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6JyzHLIyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_nkW-cLIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6JyzHbIyEeShALfFx3c95w" label="+"/>
+      <outParameters xmi:id="_6JyzHrIyEeShALfFx3c95w">
+        <modelElement href="ostorybook.uml#_nkWXYLIxEeShALfFx3c95w"/>
+        <type xmi:id="_6JyzH7IyEeShALfFx3c95w" name="ChangeListener">
+          <modelElement href="ostorybook.uml#_Qgbv0bIxEeShALfFx3c95w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_6JyzILIyEeShALfFx3c95w" name="removeChangeListener">
+      <modelElement href="ostorybook.uml#_nkW-crIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6JyzIbIyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_nkXlgLIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6JyzIrIyEeShALfFx3c95w" label="+"/>
+      <parameters xmi:id="_6JyzI7IyEeShALfFx3c95w" name="arg0">
+        <modelElement href="ostorybook.uml#_nkW-c7IxEeShALfFx3c95w"/>
+        <type xmi:id="_6JyzJLIyEeShALfFx3c95w" name="ChangeListener">
+          <modelElement href="ostorybook.uml#_Qgbv0bIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6JyzJbIyEeShALfFx3c95w" name="highlight">
+      <modelElement href="ostorybook.uml#_oPdw8LIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6JyzJrIyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_oPeYAbIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6JyzJ7IyEeShALfFx3c95w" label="+"/>
+      <outParameters xmi:id="_6JyzKLIyEeShALfFx3c95w">
+        <modelElement href="ostorybook.uml#_oPeYALIxEeShALfFx3c95w"/>
+        <type xmi:id="_6JyzKbIyEeShALfFx3c95w" name="Component">
+          <modelElement href="ostorybook.uml#_AtxvYLIxEeShALfFx3c95w"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6JyzKrIyEeShALfFx3c95w" name="comp">
+        <modelElement href="ostorybook.uml#_oPdw8bIxEeShALfFx3c95w"/>
+        <type xmi:id="_6JyzK7IyEeShALfFx3c95w" name="Component">
+          <modelElement href="ostorybook.uml#_AtxvYLIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6JyzLLIyEeShALfFx3c95w" name="compAdapter">
+        <modelElement href="ostorybook.uml#_oPdw8rIxEeShALfFx3c95w"/>
+        <type xmi:id="_6JyzLbIyEeShALfFx3c95w" name="ComponentAdapter">
+          <modelElement href="ostorybook.uml#_oNyV8LIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_6J6u4LIyEeShALfFx3c95w" name="CustomColumnFactory">
+    <modelElement href="ostorybook.uml#_nkZasLIxEeShALfFx3c95w"/>
+    <visualProperties xmi:id="_6J6u4bIyEeShALfFx3c95w" position="650.0,107.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_6J6u4rIyEeShALfFx3c95w" name="LegacyStyledElement">
+      <modelElement href="ostorybook.uml#_nkaBwLIxEeShALfFx3c95w"/>
+    </stereotypes>
+    <stereotypes xmi:id="_6J6u47IyEeShALfFx3c95w" name="Annotations">
+      <modelElement href="ostorybook.uml#_nkaBwbIxEeShALfFx3c95w"/>
+    </stereotypes>
+    <visibility xmi:id="_6J6u5LIyEeShALfFx3c95w" label="+"/>
+    <operations xmi:id="_6J6u5bIyEeShALfFx3c95w" name="configureTableColumn">
+      <modelElement href="ostorybook.uml#_oPg0QLIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6J6u5rIyEeShALfFx3c95w" name="StyledElement">
+        <modelElement href="ostorybook.uml#_oPhbUrIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6J6u57IyEeShALfFx3c95w" label="+"/>
+      <parameters xmi:id="_6J6u6LIyEeShALfFx3c95w" name="model">
+        <modelElement href="ostorybook.uml#_oPhbULIxEeShALfFx3c95w"/>
+        <type xmi:id="_6J6u6bIyEeShALfFx3c95w" name="TableModel">
+          <modelElement href="ostorybook.uml#_Nk4ksbIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6J6u6rIyEeShALfFx3c95w" name="columnExt">
+        <modelElement href="ostorybook.uml#_oPhbUbIxEeShALfFx3c95w"/>
+        <type xmi:id="_6J6u67IyEeShALfFx3c95w" name="TableColumnExt">
+          <modelElement href="ostorybook.uml#_oNeM4LIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_6KAOcLIyEeShALfFx3c95w" name="DateHighlighter">
+    <modelElement href="ostorybook.uml#_nkbP4LIxEeShALfFx3c95w"/>
+    <visualProperties xmi:id="_6KAOcbIyEeShALfFx3c95w" position="-570.0,50.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_6KAOcrIyEeShALfFx3c95w" name="LegacyStyledElement">
+      <modelElement href="ostorybook.uml#_nkb28LIxEeShALfFx3c95w"/>
+    </stereotypes>
+    <stereotypes xmi:id="_6KAOc7IyEeShALfFx3c95w" name="Annotations">
+      <modelElement href="ostorybook.uml#_nke6QLIxEeShALfFx3c95w"/>
+    </stereotypes>
+    <visibility xmi:id="_6KAOdLIyEeShALfFx3c95w" label="+"/>
+    <operations xmi:id="_6KAOdbIyEeShALfFx3c95w" name="addChangeListener">
+      <modelElement href="ostorybook.uml#_nkb28bIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6KAOdrIyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_nkceALIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6KAOd7IyEeShALfFx3c95w" label="+"/>
+      <parameters xmi:id="_6KAOeLIyEeShALfFx3c95w" name="arg0">
+        <modelElement href="ostorybook.uml#_nkb28rIxEeShALfFx3c95w"/>
+        <type xmi:id="_6KAOebIyEeShALfFx3c95w" name="ChangeListener">
+          <modelElement href="ostorybook.uml#_Qgbv0bIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6KAOerIyEeShALfFx3c95w" name="getChangeListeners">
+      <modelElement href="ostorybook.uml#_nkceArIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6KAOe7IyEeShALfFx3c95w" name="Array">
+        <modelElement href="ostorybook.uml#_nkdFErIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6KAOfLIyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_nkdsILIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6KAOfbIyEeShALfFx3c95w" label="+"/>
+      <outParameters xmi:id="_6KAOfrIyEeShALfFx3c95w">
+        <modelElement href="ostorybook.uml#_nkdFELIxEeShALfFx3c95w"/>
+        <type xmi:id="_6KAOf7IyEeShALfFx3c95w" name="ChangeListener">
+          <modelElement href="ostorybook.uml#_Qgbv0bIxEeShALfFx3c95w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_6KAOgLIyEeShALfFx3c95w" name="removeChangeListener">
+      <modelElement href="ostorybook.uml#_nkdsIrIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6KAOgbIyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_nkeTMLIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6KAOgrIyEeShALfFx3c95w" label="+"/>
+      <parameters xmi:id="_6KAOg7IyEeShALfFx3c95w" name="arg0">
+        <modelElement href="ostorybook.uml#_nkdsI7IxEeShALfFx3c95w"/>
+        <type xmi:id="_6KAOhLIyEeShALfFx3c95w" name="ChangeListener">
+          <modelElement href="ostorybook.uml#_Qgbv0bIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6KAOhbIyEeShALfFx3c95w" name="highlight">
+      <modelElement href="ostorybook.uml#_oPkeoLIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6KAOhrIyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_oPlFsbIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6KAOh7IyEeShALfFx3c95w" label="+"/>
+      <outParameters xmi:id="_6KAOiLIyEeShALfFx3c95w">
+        <modelElement href="ostorybook.uml#_oPlFsLIxEeShALfFx3c95w"/>
+        <type xmi:id="_6KAOibIyEeShALfFx3c95w" name="Component">
+          <modelElement href="ostorybook.uml#_AtxvYLIxEeShALfFx3c95w"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6KAOirIyEeShALfFx3c95w" name="comp">
+        <modelElement href="ostorybook.uml#_oPkeobIxEeShALfFx3c95w"/>
+        <type xmi:id="_6KAOi7IyEeShALfFx3c95w" name="Component">
+          <modelElement href="ostorybook.uml#_AtxvYLIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6KAOjLIyEeShALfFx3c95w" name="compAdapter">
+        <modelElement href="ostorybook.uml#_oPkeorIxEeShALfFx3c95w"/>
+        <type xmi:id="_6KAOjbIyEeShALfFx3c95w" name="ComponentAdapter">
+          <modelElement href="ostorybook.uml#_oNyV8LIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_6KIxULIyEeShALfFx3c95w" name="IdeaStatusHighlighter">
+    <modelElement href="ostorybook.uml#_nkgIYLIxEeShALfFx3c95w"/>
+    <visualProperties xmi:id="_6KIxUbIyEeShALfFx3c95w" position="1197.0,50.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_6KIxUrIyEeShALfFx3c95w" name="LegacyStyledElement">
+      <modelElement href="ostorybook.uml#_nkgvcLIxEeShALfFx3c95w"/>
+    </stereotypes>
+    <stereotypes xmi:id="_6KIxU7IyEeShALfFx3c95w" name="Annotations">
+      <modelElement href="ostorybook.uml#_nkjLsrIxEeShALfFx3c95w"/>
+    </stereotypes>
+    <visibility xmi:id="_6KJYYLIyEeShALfFx3c95w" label="+"/>
+    <operations xmi:id="_6KJYYbIyEeShALfFx3c95w" name="addChangeListener">
+      <modelElement href="ostorybook.uml#_nkgvcbIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6KJYYrIyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_nkhWgLIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6KJYY7IyEeShALfFx3c95w" label="+"/>
+      <parameters xmi:id="_6KJYZLIyEeShALfFx3c95w" name="arg0">
+        <modelElement href="ostorybook.uml#_nkgvcrIxEeShALfFx3c95w"/>
+        <type xmi:id="_6KJYZbIyEeShALfFx3c95w" name="ChangeListener">
+          <modelElement href="ostorybook.uml#_Qgbv0bIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6KJYZrIyEeShALfFx3c95w" name="getChangeListeners">
+      <modelElement href="ostorybook.uml#_nkhWgrIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6KJYZ7IyEeShALfFx3c95w" name="Array">
+        <modelElement href="ostorybook.uml#_nkh9kbIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6KJYaLIyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_nkh9krIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6KJYabIyEeShALfFx3c95w" label="+"/>
+      <outParameters xmi:id="_6KJYarIyEeShALfFx3c95w">
+        <modelElement href="ostorybook.uml#_nkhWg7IxEeShALfFx3c95w"/>
+        <type xmi:id="_6KJYa7IyEeShALfFx3c95w" name="ChangeListener">
+          <modelElement href="ostorybook.uml#_Qgbv0bIxEeShALfFx3c95w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_6KJYbLIyEeShALfFx3c95w" name="removeChangeListener">
+      <modelElement href="ostorybook.uml#_nkikobIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6KJYbbIyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_nkjLsLIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6KJYbrIyEeShALfFx3c95w" label="+"/>
+      <parameters xmi:id="_6KJYb7IyEeShALfFx3c95w" name="arg0">
+        <modelElement href="ostorybook.uml#_nkikorIxEeShALfFx3c95w"/>
+        <type xmi:id="_6KJYcLIyEeShALfFx3c95w" name="ChangeListener">
+          <modelElement href="ostorybook.uml#_Qgbv0bIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6KJYcbIyEeShALfFx3c95w" name="highlight">
+      <modelElement href="ostorybook.uml#_oPoJALIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6KJYcrIyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_oPpXILIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6KJYc7IyEeShALfFx3c95w" label="+"/>
+      <outParameters xmi:id="_6KJYdLIyEeShALfFx3c95w">
+        <modelElement href="ostorybook.uml#_oPowEbIxEeShALfFx3c95w"/>
+        <type xmi:id="_6KJYdbIyEeShALfFx3c95w" name="Component">
+          <modelElement href="ostorybook.uml#_AtxvYLIxEeShALfFx3c95w"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6KJYdrIyEeShALfFx3c95w" name="comp">
+        <modelElement href="ostorybook.uml#_oPoJAbIxEeShALfFx3c95w"/>
+        <type xmi:id="_6KJYd7IyEeShALfFx3c95w" name="Component">
+          <modelElement href="ostorybook.uml#_AtxvYLIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6KJYeLIyEeShALfFx3c95w" name="compAdapter">
+        <modelElement href="ostorybook.uml#_oPowELIxEeShALfFx3c95w"/>
+        <type xmi:id="_6KJYebIyEeShALfFx3c95w" name="ComponentAdapter">
+          <modelElement href="ostorybook.uml#_oNyV8LIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_6KR7QLIyEeShALfFx3c95w" name="SceneStatusHighlighter">
+    <modelElement href="ostorybook.uml#_nklA4LIxEeShALfFx3c95w"/>
+    <visualProperties xmi:id="_6KR7QbIyEeShALfFx3c95w" position="-1190.0,50.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_6KR7QrIyEeShALfFx3c95w" name="LegacyStyledElement">
+      <modelElement href="ostorybook.uml#_nklA4bIxEeShALfFx3c95w"/>
+    </stereotypes>
+    <stereotypes xmi:id="_6KR7Q7IyEeShALfFx3c95w" name="Annotations">
+      <modelElement href="ostorybook.uml#_nkoEMrIxEeShALfFx3c95w"/>
+    </stereotypes>
+    <visibility xmi:id="_6KR7RLIyEeShALfFx3c95w" label="+"/>
+    <operations xmi:id="_6KSiULIyEeShALfFx3c95w" name="addChangeListener">
+      <modelElement href="ostorybook.uml#_nkln8LIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6KSiUbIyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_nkmPALIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6KSiUrIyEeShALfFx3c95w" label="+"/>
+      <parameters xmi:id="_6KSiU7IyEeShALfFx3c95w" name="arg0">
+        <modelElement href="ostorybook.uml#_nkln8bIxEeShALfFx3c95w"/>
+        <type xmi:id="_6KSiVLIyEeShALfFx3c95w" name="ChangeListener">
+          <modelElement href="ostorybook.uml#_Qgbv0bIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6KSiVbIyEeShALfFx3c95w" name="getChangeListeners">
+      <modelElement href="ostorybook.uml#_nkmPArIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6KSiVrIyEeShALfFx3c95w" name="Array">
+        <modelElement href="ostorybook.uml#_nkm2ELIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6KSiV7IyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_nkm2EbIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6KSiWLIyEeShALfFx3c95w" label="+"/>
+      <outParameters xmi:id="_6KSiWbIyEeShALfFx3c95w">
+        <modelElement href="ostorybook.uml#_nkmPA7IxEeShALfFx3c95w"/>
+        <type xmi:id="_6KSiWrIyEeShALfFx3c95w" name="ChangeListener">
+          <modelElement href="ostorybook.uml#_Qgbv0bIxEeShALfFx3c95w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_6KSiW7IyEeShALfFx3c95w" name="removeChangeListener">
+      <modelElement href="ostorybook.uml#_nkndILIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6KSiXLIyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_nkoEMLIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6KSiXbIyEeShALfFx3c95w" label="+"/>
+      <parameters xmi:id="_6KSiXrIyEeShALfFx3c95w" name="arg0">
+        <modelElement href="ostorybook.uml#_nkndIbIxEeShALfFx3c95w"/>
+        <type xmi:id="_6KSiX7IyEeShALfFx3c95w" name="ChangeListener">
+          <modelElement href="ostorybook.uml#_Qgbv0bIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6KSiYLIyEeShALfFx3c95w" name="highlight">
+      <modelElement href="ostorybook.uml#_oPrzYLIxEeShALfFx3c95w"/>
+      <stereotypes xmi:id="_6KSiYbIyEeShALfFx3c95w" name="Annotations">
+        <modelElement href="ostorybook.uml#_oPtBgLIxEeShALfFx3c95w"/>
+      </stereotypes>
+      <visibility xmi:id="_6KSiYrIyEeShALfFx3c95w" label="+"/>
+      <outParameters xmi:id="_6KSiY7IyEeShALfFx3c95w">
+        <modelElement href="ostorybook.uml#_oPsacrIxEeShALfFx3c95w"/>
+        <type xmi:id="_6KSiZLIyEeShALfFx3c95w" name="Component">
+          <modelElement href="ostorybook.uml#_AtxvYLIxEeShALfFx3c95w"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6KSiZbIyEeShALfFx3c95w" name="comp">
+        <modelElement href="ostorybook.uml#_oPsacLIxEeShALfFx3c95w"/>
+        <type xmi:id="_6KSiZrIyEeShALfFx3c95w" name="Component">
+          <modelElement href="ostorybook.uml#_AtxvYLIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6KSiZ7IyEeShALfFx3c95w" name="compAdapter">
+        <modelElement href="ostorybook.uml#_oPsacbIxEeShALfFx3c95w"/>
+        <type xmi:id="_6KSiaLIyEeShALfFx3c95w" name="ComponentAdapter">
+          <modelElement href="ostorybook.uml#_oNyV8LIxEeShALfFx3c95w"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

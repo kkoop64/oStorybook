@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_vG1RYLIxEeShALfFx3c95w">
+  <modelElement href="ostorybook.uml#_MroBcLIxEeShALfFx3c95w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Uj4FMLIzEeShALfFx3c95w" targetItem="_Uj4sQLIzEeShALfFx3c95w" sourceItem="_Uj3eILIzEeShALfFx3c95w"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Uj3eILIzEeShALfFx3c95w" sourceConnectionVisual="_Uj4FMLIzEeShALfFx3c95w" text="@author martin&#xA; *" item="_Uj4sQLIzEeShALfFx3c95w">
+    <modelElement href="ostorybook.uml#_N1ArYbIxEeShALfFx3c95w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Uj4sQLIzEeShALfFx3c95w" comments="_Uj3eILIzEeShALfFx3c95w" targetConnectionVisual="_Uj4FMLIzEeShALfFx3c95w" name="TestLangTool">
+    <modelElement href="ostorybook.uml#_M7nlQLIxEeShALfFx3c95w"/>
+    <visualProperties xmi:id="_Uj4sQbIzEeShALfFx3c95w" position="50.0,50.0"/>
+    <visibility xmi:id="_Uj4sQrIzEeShALfFx3c95w" label="+"/>
+    <operations xmi:id="_Uj4sQ7IzEeShALfFx3c95w" name="main" staticOperation="true">
+      <modelElement href="ostorybook.uml#_M7ozYLIxEeShALfFx3c95w"/>
+      <visibility xmi:id="_Uj4sRLIzEeShALfFx3c95w" label="+"/>
+      <parameters xmi:id="_Uj4sRbIzEeShALfFx3c95w" name="args">
+        <modelElement href="ostorybook.uml#_M7ozYbIxEeShALfFx3c95w"/>
+        <type xmi:id="_Uj4sRrIzEeShALfFx3c95w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
