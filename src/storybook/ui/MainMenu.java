@@ -11,6 +11,7 @@ import com.sun.jaf.ui.ActionManager;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
+import java.io.IOException;
 import javax.swing.Action;
 import javax.swing.JOptionPane;
 
@@ -20,6 +21,7 @@ import storybook.SbConstants.ViewName;
 import storybook.action.LangToolAction;
 import storybook.export.BookExporter;
 import storybook.export.DlgExport;
+import storybook.imports.CharacterImporter;
 import storybook.model.hbn.entity.AbstractEntity;
 import storybook.model.hbn.entity.Category;
 import storybook.model.hbn.entity.Chapter;
@@ -124,6 +126,7 @@ public class MainMenu extends javax.swing.JFrame {
         fileProperties = new javax.swing.JMenuItem();
         separatorFile2 = new javax.swing.JPopupMenu.Separator();
         fileExport = new javax.swing.JMenuItem();
+		fileImportCharactersFromFile = new javax.swing.JMenuItem();
         filePrint = new javax.swing.JMenuItem();
         separatorFile3 = new javax.swing.JPopupMenu.Separator();
         fileExit = new javax.swing.JMenuItem();
@@ -632,6 +635,22 @@ public class MainMenu extends javax.swing.JFrame {
         });
         menuFile.add(fileProperties);
         menuFile.add(separatorFile2);
+
+		fileImportCharactersFromFile.setText(bundle.getString("msg.import")); // NOI18N
+		fileImportCharactersFromFile.setActionCommand("import-characters-from-file-command");
+		fileImportCharactersFromFile.addActionListener(new java.awt.event.ActionListener() {
+
+			/**
+			 * todo: summary
+			 * @param evt todo: summary
+			 */
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+
+				try { fileImportCharactersFromFileActionPerformed(evt); }
+				catch (IOException e) { /* todo: handle possible import IOException */ }
+			}
+		});
+		menuFile.add(fileImportCharactersFromFile);
 
         fileExport.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_MASK));
         fileExport.setIcon(new javax.swing.ImageIcon(getClass().getResource("/storybook/resources/icons/16x16/export.png"))); // NOI18N
@@ -1506,6 +1525,17 @@ public class MainMenu extends javax.swing.JFrame {
 		SwingUtil.showModalDialog(dlg, mainFrame);
     }//GEN-LAST:event_filePropertiesActionPerformed
 
+	/**
+	 * todo: summary
+	 * @param evt todo: summary
+	 */
+	private void fileImportCharactersFromFileActionPerformed(java.awt.event.ActionEvent evt) throws IOException {
+
+		CharacterImporter charImporter = new CharacterImporter(mainFrame);
+
+		charImporter.importFromTxtFile();
+	}
+
     private void fileExportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileExportActionPerformed
 		DlgExport export=new DlgExport(mainFrame);
 		export.setVisible(true);
@@ -2058,6 +2088,7 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JMenuItem fileClose;
     private javax.swing.JMenuItem fileExit;
     private javax.swing.JMenuItem fileExport;
+	private javax.swing.JMenuItem fileImportCharactersFromFile;
     private javax.swing.JMenuItem fileNew;
     private javax.swing.JMenuItem fileOpen;
     public javax.swing.JMenu fileOpenRecent;
@@ -2191,7 +2222,7 @@ public class MainMenu extends javax.swing.JFrame {
 		}
 		javax.swing.JMenuItem[] submenus={
 			editCopyBlurb, editCopyBook,
-			fileClose, fileExport, filePrint,
+			fileClose, fileExport, fileImportCharactersFromFile, filePrint,
 			fileProperties, fileRename, fileSave, fileSaveAs
 		};
 		for (javax.swing.JMenuItem m : submenus) {
