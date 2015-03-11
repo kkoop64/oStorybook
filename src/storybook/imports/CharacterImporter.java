@@ -1,12 +1,13 @@
 package storybook.imports;
 
 import javax.swing.*;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Collections;
 
+import opennlp.tools.util.Span;
+import storybook.toolkit.IOUtil;
+import storybook.toolkit.OpenNLP;
 import storybook.ui.MainFrame;
 
 /**
@@ -27,18 +28,29 @@ public class CharacterImporter extends AbstractImporter {
 	/**
 	 * todo: summary
 	 */
-	public void importFromTxtFile() throws IOException {
+	public void importFromFile() throws IOException {
 
-		String[] importText = getImportFile();
+		// parse out the names
 
-		if (importText.length < 1)
+		OpenNLP nlp = new OpenNLP();
+
+		String importText = getImportFileText();
+
+		if (importText.length() < 1)
 			return;
 
-		System.out.println("CharacterImporter.ImportCharactersFromTxtFile: Parsing import...");
+		String[] sentences = nlp.detectSentences(importText);
 
-		// todo: implement
+		ArrayList<String> names = new ArrayList<>();
 
-		System.out.println("CharacterImporter.ImportCharactersFromTxtFile: Finished parsing import.");
+		for (String sentence : sentences) {
+
+			String[] tokenizedSentence = nlp.tokenizeSentence(sentence);
+
+			Collections.addAll(names, Span.spansToStrings(nlp.findNamesInSentence(tokenizedSentence), tokenizedSentence));
+		}
+
+		// todo: add the names to the project characters list
 	}
 
 	/**
@@ -46,31 +58,19 @@ public class CharacterImporter extends AbstractImporter {
 	 * @return todo: summary
 	 * @throws IOException
 	 */
-	private String[] getImportFile() throws IOException {
+	private String getImportFileText() throws IOException {
 
-		JFileChooser chooser = new JFileChooser();
-		chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+		JFileChooser fileChooser = new JFileChooser();
+		fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
 
-		if (chooser.showOpenDialog(mainFrame) != JFileChooser.APPROVE_OPTION)
-			return new String[0];
+		if (fileChooser.showOpenDialog(mainFrame) != JFileChooser.APPROVE_OPTION)
+			return "";
 
-		System.out.println("CharacterImporter.GetImportFile: Reading user selected import file...");
+		File selectedImportFile = fileChooser.getSelectedFile();
 
-		File importFile = chooser.getSelectedFile();
+		if (selectedImportFile.exists())
+			return IOUtil.readFileAsString(selectedImportFile.toPath().toString());
 
-		FileReader fileReader = new FileReader(importFile);
-		BufferedReader importReader = new BufferedReader(fileReader);
-
-		String currentLine;
-		ArrayList<String> importText = new ArrayList<>();
-
-		while ((currentLine = importReader.readLine()) != null)
-			importText.add(currentLine);
-
-		importReader.close();
-
-		System.out.println("CharacterImporter.GetImportFile: Closed import file.");
-
-		return importText.toArray(new String[importText.size()]);
+		return "";
 	}
 }

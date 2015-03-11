@@ -644,10 +644,16 @@ public class MainMenu extends javax.swing.JFrame {
 			 * todo: summary
 			 * @param evt todo: summary
 			 */
-			public void actionPerformed(java.awt.event.ActionEvent evt) {
+			public void actionPerformed(final java.awt.event.ActionEvent evt) {
 
-				try { fileImportCharactersFromFileActionPerformed(evt); }
-				catch (IOException e) { /* todo: handle possible import IOException */ }
+				try {
+
+					fileImportCharactersFromFileActionPerformed(evt);
+				}
+				catch (IOException e) {
+
+					e.printStackTrace();
+				}
 			}
 		});
 		menuFile.add(fileImportCharactersFromFile);
@@ -1529,11 +1535,11 @@ public class MainMenu extends javax.swing.JFrame {
 	 * todo: summary
 	 * @param evt todo: summary
 	 */
-	private void fileImportCharactersFromFileActionPerformed(java.awt.event.ActionEvent evt) throws IOException {
+	private void fileImportCharactersFromFileActionPerformed(final java.awt.event.ActionEvent evt) throws IOException {
 
 		CharacterImporter charImporter = new CharacterImporter(mainFrame);
 
-		charImporter.importFromTxtFile();
+		charImporter.importFromFile();
 	}
 
     private void fileExportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileExportActionPerformed
