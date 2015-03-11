@@ -2,22 +2,24 @@ package storybook.imports;
 
 import javax.swing.*;
 import java.io.*;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
 
-import com.sun.tools.hat.internal.util.Comparer;
-import opennlp.tools.util.Span;
+import com.google.gson.Gson;
 import org.hibernate.Session;
+
 import storybook.model.BookModel;
-import storybook.model.hbn.SbSessionFactory;
-import storybook.model.hbn.dao.PersonDAOImpl;
+import storybook.model.hbn.dao.GenderDAOImpl;
 import storybook.model.hbn.entity.Gender;
 import storybook.model.hbn.entity.Person;
 import storybook.toolkit.IOUtil;
 import storybook.toolkit.OpenNLP;
 import storybook.ui.MainFrame;
+
+import opennlp.tools.util.Span;
 
 /**
  * todo: summary
@@ -129,9 +131,9 @@ public class CharacterImporter extends AbstractImporter {
 				else if (!nameParts[0].matches(".*\\d.*") &&
 					(
 						nameParts.length == 1 ||
-						!nameParts[nameParts.length-1].matches(".*\\d.*")
+							!nameParts[nameParts.length-1].matches(".*\\d.*")
 					)
-				) {
+					) {
 
 					firstName = nameParts[0];
 
@@ -148,9 +150,9 @@ public class CharacterImporter extends AbstractImporter {
 						if (character.getFirstname().trim().compareTo(firstName.trim()) == 0 &&
 							(
 								character.getLastname().trim().compareTo(lastName.trim()) == 0 ||
-								lastName.trim().length() < 1
+									lastName.trim().length() < 1
 							)
-						) {
+							) {
 
 							characterExists = true;
 							break;
@@ -163,7 +165,16 @@ public class CharacterImporter extends AbstractImporter {
 						person.setFirstname(firstName.trim());
 						person.setLastname(lastName.trim());
 
-						// todo: make call to get gender
+						Gender personGender = null;
+
+						try {
+							personGender = getNameGender(firstName);
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
+
+						if (personGender != null)
+							person.setGender(personGender);
 
 						characters.add(person);
 
@@ -193,5 +204,60 @@ public class CharacterImporter extends AbstractImporter {
 			return IOUtil.readFileAsString(selectedImportFile.toPath().toString());
 
 		return "";
+	}
+
+	private Gender getNameGender(final String firstName) throws Exception {
+
+		BookModel model = mainFrame.getBookModel();
+
+		Session session = model.beginTransaction();
+
+		GenderDAOImpl genderDao = new GenderDAOImpl(session);
+
+		Gender male = genderDao.findMale();
+		Gender female = genderDao.findFemale();
+
+		model.commit();
+
+		String json = readUrl("https://api.genderize.io/?name=" + URLEncoder.encode(firstName.trim()));
+
+		Gson gson = new Gson();
+		NameGender nameGender = gson.fromJson(json, NameGender.class);
+
+		if (nameGender.gender != null) {
+
+			if (nameGender.gender.compareTo("male") == 0)
+				return male;
+			else if (nameGender.gender.compareTo("female") == 0)
+				return female;
+		}
+
+		return null;
+	}
+
+	private String readUrl(String urlString) throws Exception {
+		BufferedReader reader = null;
+		try {
+			URL url = new URL(urlString);
+			reader = new BufferedReader(new InputStreamReader(url.openStream()));
+			StringBuffer buffer = new StringBuffer();
+			int read;
+			char[] chars = new char[1024];
+			while ((read = reader.read(chars)) != -1)
+				buffer.append(chars, 0, read);
+
+			return buffer.toString();
+		} finally {
+			if (reader != null)
+				reader.close();
+		}
+	}
+
+	static class NameGender {
+
+		String name;
+		String gender;
+		String probability;
+		int count;
 	}
 }
